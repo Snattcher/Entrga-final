@@ -1,0 +1,174 @@
+@import "variables";
+@import "funciones";
+@import "inicio";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDF8E1;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hr-w {
+    height:5px; 
+    width: 90%;
+    margin: 0 auto;
+    background-color: $e-primario;
+}
+
+.hr-h {
+    width: 0%;
+    height: 100px;
+}
+
+.font-600 {
+    font-size: 600;
+}
+
+.titulo-centrado {
+    color: $e-primario;
+    @include centro
+}
+
+.cont-centrado {
+    @include flex-centrado
+}
+
+.p-centrado {
+    @include texto-centrado
+}
+
+.start-centrado {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.img-game {
+    width: 100px;
+    width: 100px;
+}
+
+/*Bordes*/
+
+.bord-r-r {
+    border: 4px solid $e-terciario;
+}
+
+.bord-r {
+    border: 4px solid $rosa;
+}
+
+.borde-rojo {
+    color: #fff;
+    background-color: $e-primario;
+    @include borde-1
+}
+
+.borde-morado{
+    color: #fff;
+    background-color: $morado;
+}
+
+/*BACKGRONDS C*/
+
+.bg-rojo {
+    background-color: $e-primario;
+}
+
+.bg-color-ter {
+    background-color: $e-terciario;
+    color: $decorados;
+    max-width: 98%;
+}
+
+.bg-color-deco {
+    background-color: $decorados-2;
+    color: $letras;
+    max-width: 98%;
+
+}
+
+.bc-a {
+    background-color: $e-cuatro;
+}
+
+.bc-m {
+    background-color: $morado-2;
+    border: 3px solid $letras;
+
+    &:hover {
+        background-color: $morado;
+    }
+}
+
+.bc-n {
+    background-color: $letras;
+    border: 3px solid $decorados;
+
+    &:hover {
+        background-color: #534f4f;
+    }
+}
+
+.bc-blanco {
+    background-color: #fff;
+}
+
+.bc-rosa {
+    background-color: $rosa;
+}
+
+.bc-rojo-3 {
+    background-color: $e-secundarios;
+    border: 3px solid $letras;
+    
+    &:hover {
+        background-color: $e-primario;
+    }
+}
+
+/*Colores*/
+
+.rojo-1 {
+    color: $e-primario;
+}
+
+.verde {
+    color: $verde;
+}
+
+.morado {
+    color: $morado;
+}
+
+.naranja {
+    color: $naranja;
+}
+
+.azunl {
+    color: $azul;
+}
+
+.rosa {
+    color: $rosa;
+}

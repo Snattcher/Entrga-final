@@ -1,0 +1,67 @@
+/*Font-size-weight*/
+$font-ch: 1.5em;
+$font-g: 1.1em;
+$font-400: 400;
+$font-900: 900; 
+
+/*Colores*/
+$e-primario: #E5383B;
+$e-secundarios: #A4161A;
+$e-terciario: #660708;
+$e-cuatro: #ffdb2b;
+$e-cinco: #a08918;
+$letras: #161A1D;
+$decorados: #F5F3F4;
+$decorados-2: #B1A7A6;
+
+$verde: #195226;
+$morado: #6432a1;
+$naranja: #6b4500;
+$azul: #2767c5;
+$rosa: #c31bc5;
+$morado-2: #330e5e;
+/*mixing*/
+
+@mixin flex-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@mixin flex-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0 20px 30px;
+}
+
+@mixin flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@mixin texto-centrado {
+    margin: 10px 15px 5px 15px;
+}
+
+@mixin centro {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+@mixin borde-1 {
+    border: 2px solid;
+}
+
